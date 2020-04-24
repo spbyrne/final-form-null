@@ -13,6 +13,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-tinacms",
+      options: {
+        plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
